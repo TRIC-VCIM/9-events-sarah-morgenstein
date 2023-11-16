@@ -2,7 +2,46 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+body {
+  max-width: 350px;
+  margin: auto;
+}
+
 input,
 button {
   font-size: 1.2rem;
+}
+#log {
+  margin: 0;
+  padding: 0;
+}
+
+#log li {
+  list-style-type: none;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.freezing {
+  background-color: #5b85aa;
+  color: white;
+}
+.chilly {
+  background-color: #c7eae4;
+}
+
+.warm {
+  background-color: #f9dc5c;
+}
+
+.hot {
+  background-color: #f46036;
+  color: white;
+}
+
+.burning {
+  background-color: #c33e05;
+  color: white;
 }

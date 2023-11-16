@@ -35,7 +35,10 @@ function checkAnswer(e) {
   }
   message.innerHTML = 'Try again!';
 
-  log.insertAdjacentHTML('beforeend', `<li>${guess}, ${result}</li>`);
+  log.insertAdjacentHTML(
+    'beforeend',
+    `<li class="${result}">${guess}, ${result}</li>`
+  );
   document.getElementById('guess').value = '';
 }
 
