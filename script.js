@@ -1,5 +1,4 @@
 const form = document.querySelector('form');
-
 const message = document.getElementById('message');
 const log = document.getElementById('log');
 
@@ -10,6 +9,7 @@ console.log(solution);
 function checkAnswer(e) {
   e.preventDefault();
   let guess = document.getElementById('guess').value;
+  const HTMLbody = document.querySelector('body');
   let result;
 
   message.innerHTML = '';
@@ -34,11 +34,8 @@ function checkAnswer(e) {
     result = 'burning';
   }
   message.innerHTML = 'Try again!';
-
-  log.insertAdjacentHTML(
-    'beforeend',
-    `<li class="${result}">${guess}, ${result}</li>`
-  );
+  HTMLbody.className = result;
+  log.insertAdjacentHTML('beforeend', `<li>${guess}, ${result}</li>`);
   document.getElementById('guess').value = '';
 }
 

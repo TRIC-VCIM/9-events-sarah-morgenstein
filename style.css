@@ -18,10 +18,7 @@ button {
 }
 
 #log li {
-  list-style-type: none;
-  padding: 2rem;
   margin: 1rem;
-  text-align: center;
 }
 
 .freezing {
